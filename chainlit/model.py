@@ -27,5 +27,5 @@ def set_custom_prompt():
 
 def load_llm():
     llm = CTransformers(
-        model = 
+        model = "model"
     )

@@ -1,0 +1,53 @@
+
+button{
+    background-color: #1f0303;
+    padding: 1rem;
+    color: #fffefe;
+    border-radius: .516rem;
+    font-size: 1.1rem;
+    transition: 300ms ease-in;
+  }
+button:hover{
+  color: #1e0101;
+  background-color: #faf6f6;
+}
+.center{
+  margin: -2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo{
+  padding-top: .2rem;
+  background-color: #f4e4e4;
+  height: 4.7rem;
+  position: absolute;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fcf8f8;
+  color: #400404;
+  padding: 1.2rem;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.5);
+  height: 2.9rem;
+  font-family: 'Noto Sans Cypro Minoan', sans-serif;
+  font-weight: 100;
+  transition: 340ms ease-in-out;
+}
+.home{
+  opacity: .9;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,0.5);
+  padding: .4rem;
+  transition: 300ms ease-in;
+
+}
+.home:hover{
+  background-color: #020000;
+  color: #fdfcfc;
+}
+.nav:hover{
+  background-color: #fff;
+  color: #000;
+}

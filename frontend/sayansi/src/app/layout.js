@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.css';
 import { Inter, Noto_Sans } from 'next/font/google'
 
 

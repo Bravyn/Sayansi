@@ -6,6 +6,9 @@ import NameForm from './components/NameForm';
 import FileUpload from './components/TextInput';
 import SubmitFile from '../app/components/SubmitFile'
 import Intro from '../app/components/Intro'
+import Button from 'react-bootstrap/Button';
+
+
 
 import { useState } from 'react';
 
@@ -28,8 +31,8 @@ export default function Home() {
       className: "my-class",
     },
   ];
-  
-  
+
+
   const [start, setStart] = useState(false)
 
   const handleStart = (() => {
@@ -41,31 +44,34 @@ export default function Home() {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&family=Noto+Sans+Mono:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
-      
+
       <div className="center">
         <img
           src="/logo.svg"
           alt="logo"
-          width={400}
-          height={250}
+          width={900}
+          height={900}
           priority
         />
+        <Button as="a" variant="success">
+          Button as link
+        </Button>
       </div>
 
       <div className="center">
         {
           start ?
             <div>
-               <h2>Select file to analyze</h2>
-              <SubmitFile/>
+              <h2>Select file to analyze</h2>
+              <SubmitFile />
             </div>
             :
             <button onClick={handleStart}>Get Started</button>
 
 
         }
-        
-        
+
+
       </div>
 
 

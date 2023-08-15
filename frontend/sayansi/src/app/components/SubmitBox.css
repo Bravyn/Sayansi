@@ -14,6 +14,10 @@ h2{
   color: rgba(255, 255, 255, .5);
   font-size: 2rem;
 }
+h1{
+  color: #007bff;
+  font-size: 3rem;
+}
 .submit-box {
     background-color: #fafafa;
     border-radius: 8px;

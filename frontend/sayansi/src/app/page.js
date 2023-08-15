@@ -54,11 +54,10 @@ export default function Home() {
               <SubmitFile />
             </div>
             :
-            <Button variant="primary" onClick={handleStart}>Get Started</Button>
+            <GetStarted/>
 
 
         }
-      <GetStarted/>
 
       </div>
 

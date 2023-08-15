@@ -51,11 +51,18 @@ h2{
   .submit-button:hover {
     background-color: #0056b3;
   }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   
-  /* Optional: Add media queries for responsiveness */
+  /* Optional: Add media queries for responsiveness 
   @media (max-width: 768px) {
     .submit-input {
       height: 100px;
     }
   }
-  
+  */

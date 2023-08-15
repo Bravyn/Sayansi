@@ -1,14 +1,13 @@
 'use client'
 import Image from 'next/image';
-//import './btn.css';
-import '../app/components/SubmitBox.css'
 import NameForm from './components/NameForm';
 import FileUpload from './components/TextInput';
 import SubmitFile from '../app/components/SubmitFile'
 import Intro from '../app/components/Intro'
 import Button from 'react-bootstrap/Button';
-
-
+import '../app/components/SubmitBox.css'
+import './style.css'
+import GetStarted from './components/GetStarted';
 
 import { useState } from 'react';
 
@@ -40,41 +39,29 @@ export default function Home() {
   });
 
   return (
-    <main className="">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&family=Noto+Sans+Mono:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
-
-      <div className="center">
-        <img
-          src="/logo.svg"
-          alt="logo"
-          width={900}
-          height={900}
-          priority
-        />
-        <Button as="a" variant="success">
-          Button as link
-        </Button>
+    <div className="container">
+      
+      <div className="logo">
+        
+       <h1>Turnaut</h1>
       </div>
 
-      <div className="center">
+      <div>
         {
           start ?
             <div>
-              <h2>Select file to analyze</h2>
+              <h3>Select file to analyze</h3>
               <SubmitFile />
             </div>
             :
-            <button onClick={handleStart}>Get Started</button>
+            <Button variant="primary" onClick={handleStart}>Get Started</Button>
 
 
         }
-
+      <GetStarted/>
 
       </div>
 
-
-    </main>
+    </div>
   )
 }

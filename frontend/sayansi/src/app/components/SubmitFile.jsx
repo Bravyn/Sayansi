@@ -11,7 +11,9 @@ const FileInputButton = () => {
   };
 
   return (
+    <div className='main_container'>
     <div className="file-input-container">
+      
       <input
         type="file"
         id="file-input"
@@ -21,7 +23,7 @@ const FileInputButton = () => {
       <label htmlFor="file-input" className="file-input-label">
         Choose a file
       </label>
-      <h1>{}</h1>
+    </div>
     </div>
   );
 };

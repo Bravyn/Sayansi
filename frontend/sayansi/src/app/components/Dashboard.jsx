@@ -11,7 +11,7 @@ function Dashboard() {
     <Container>
       <Row>
       <Col xs lg = {8}> <HomeText/> </Col>
-
+       <br/>
         <Col><DashboardItems/></Col>
       </Row>
      

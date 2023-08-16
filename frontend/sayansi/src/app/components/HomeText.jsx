@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card'
 
 
@@ -18,6 +19,7 @@ import Card from 'react-bootstrap/Card'
                         thus finely adapting the educational journey to match each student's distinct requirements.
                         Join us on the cutting-edge of education with AI-Enhanced Turnaut!
                     </Card.Text>
+                  <Button variant='success'  >Learn More</Button>
 
                 </Card.Body>
             </Card>

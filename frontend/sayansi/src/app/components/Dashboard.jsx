@@ -10,8 +10,9 @@ function Dashboard() {
   return (
     <Container>
       <Row>
+      <Col xs lg = {8}> <HomeText/> </Col>
+
         <Col><DashboardItems/></Col>
-        <Col xs lg = {8}> <HomeText/> </Col>
       </Row>
      
     </Container>

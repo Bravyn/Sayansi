@@ -32,16 +32,9 @@ llm = CTransformers(model="models/llama-2-7b-chat.ggmlv3.q4_0.bin",
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-# chain = ConversationalRetrievalChain.from_llm(llm=llm,chain_type='stuff',
-#                                               retriever=vector_store.as_retriever(search_kwargs={"k":2}),
-#                                               memory=memory)
-
-
-loader = WebBaseLoader("https://lilianweng.github.io/posts/2023-06-23-agent/")
-docs = loader.load()
-
-chain = load_summarize_chain(llm, chain_type="stuff")
-chain.run(docs)
+chain = ConversationalRetrievalChain.from_llm(llm=llm,chain_type='stuff',
+                                              retriever=vector_store.as_retriever(search_kwargs={"k":2}),
+                                              memory=memory)
 
 st.title("Turnaut 🧑🏽‍⚕️")
 def conversation_chat(query):

@@ -43,7 +43,7 @@ docs = loader.load()
 chain = load_summarize_chain(llm, chain_type="stuff")
 chain.run(docs)
 
-st.title("Mental Health ChatBot 🧑🏽‍⚕️")
+st.title("Turnaut 🧑🏽‍⚕️")
 def conversation_chat(query):
     result = chain({"question": query, "chat_history": st.session_state['history']})
     st.session_state['history'].append((query, result["answer"]))

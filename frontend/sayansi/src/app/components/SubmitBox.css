@@ -14,6 +14,10 @@ h2{
   color: rgba(255, 255, 255, .5);
   font-size: 2rem;
 }
+h1{
+  color: #007bff;
+  font-size: 3rem;
+}
 .submit-box {
     background-color: #fafafa;
     border-radius: 8px;
@@ -51,11 +55,20 @@ h2{
   .submit-button:hover {
     background-color: #0056b3;
   }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+  }
+
   
-  /* Optional: Add media queries for responsiveness */
+  /* Optional: Add media queries for responsiveness 
   @media (max-width: 768px) {
     .submit-input {
       height: 100px;
     }
   }
-  
+  */

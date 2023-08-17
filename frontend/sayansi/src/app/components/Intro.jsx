@@ -1,51 +1,20 @@
-import React, { useState } from "react";
-import  '../components/Intro.css'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const Carousel = ({ images }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handlePrevious = () => {
-    setCurrentSlide(currentSlide - 1);
-  };
-
-  const handleNext = () => {
-    setCurrentSlide(currentSlide + 1);
-  };
-
+function BasicExample() {
   return (
-    <div className="carousel">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`slide ${currentSlide === index ? "active" : ""}`}
-        >
-          <img src={image.src} alt={image.alt} className={image.className} />
-        </div>
-      ))}
-      <div className="navigation">
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={handleNext}>Next</button>
-      </div>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://placehold.co/600x400" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
   );
-};
+}
 
-const images = [
-  {
-    src: "https://picsum.photos/id/100/200",
-    alt: "Image 1",
-    className: "my-class",
-  },
-  {
-    src: "https://picsum.photos/id/8/400",
-    alt: "Image 2",
-    className: "my-class",
-  },
-  {
-    src: "D:\project90\Sayansi\frontend\sayansi\src\app\background.jpg",
-    alt: "Image 3",
-    className: "my-class",
-  },
-];
-
-export default Carousel;
+export default BasicExample;

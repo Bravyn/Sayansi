@@ -1,8 +1,15 @@
 import Stack from 'react-bootstrap/Stack';
 import { Button } from 'react-bootstrap';
 import Logo from '../components/Logo'
+import { useState } from 'react';
 
 function DashboardItems() {
+  const [activeWin, setActiveWin] = useState(0)
+
+  const handleButton = (btn_number) => {
+    setActiveWin(btn_number)
+  }
+
   return (
     <Stack gap={3}>
         <Logo/>

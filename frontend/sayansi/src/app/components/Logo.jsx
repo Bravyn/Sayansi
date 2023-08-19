@@ -8,7 +8,7 @@ function ShapeExample() {
     <Container>
       <Row>
         <Col xs={6} md={4}>
-          <Image src="https://placehold.co/200x100" rounded />
+          <Image src="https://picsum.photos/id/80/250/250" rounded />
         </Col>
        
       </Row>

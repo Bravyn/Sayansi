@@ -9,6 +9,11 @@ from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.document_loaders import WebBaseLoader
 from langchain.chains.summarize import load_summarize_chain
+import os
+import replicate
+
+#Set the REPLICATE_API_TOKEN environment variable
+os.environ["REPLICATE_API_TOKEN"] = "your_api_token_here"
 
 #load the pdf files from the path
 loader = DirectoryLoader('data/',glob="*.pdf",loader_cls=PyPDFLoader)
